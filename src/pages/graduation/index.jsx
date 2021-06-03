@@ -9,7 +9,7 @@ const Graduation = () => {
     return (
         <>
         <h2>Graduation Drinks List</h2>
-        <h3>{graduationDrinks.length === 0 ? 'Empty List' : `Total drinks:${graduationDrinks.length}`}</h3>
+        <h3>{graduationDrinks.length === 0 ? 'Empty List' : `Total drinks: ${graduationDrinks.length}`}</h3>
         {
             graduationDrinks.map((drink) => (
                 <List>

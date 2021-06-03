@@ -46,12 +46,15 @@ export const Button = styled.button`
     margin: 0.5rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: #55cfdfb7;
+    background-color: #5581dfb7;
     color: #ffffffb7;
     font-variant: small-caps;
+    transition: 0.3s;
 
     :hover {
-        background-color: #55cfdf;
+        background-color: #5581df;
         color: #ffffff;
+        box-shadow: -1px -1px 5px #c3c3c3;
+        border-radius: 1rem;
     }
 `;

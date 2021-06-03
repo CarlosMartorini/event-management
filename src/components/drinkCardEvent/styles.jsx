@@ -12,7 +12,8 @@ export const Card = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50rem;
+    justify-content: space-between;
+    width: 80rem;
     height: 11rem;
     margin: 2rem 10rem;
     border-bottom: 2px solid #535353;
@@ -27,5 +28,6 @@ export const Card = styled.div`
         margin: 1rem;
         font-size: 1.2rem;
         font-variant: small-caps;
+        max-width: 30rem;
     }
 `;
