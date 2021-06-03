@@ -9,7 +9,7 @@ const Wedding = () => {
     return (
         <>
             <h2>Wedding Drinks List</h2>
-            <h3>{weddingDrinks.length === 0 ? 'Empty List' : `Total drinks:${weddingDrinks.length}`}</h3>
+            <h3>{weddingDrinks.length === 0 ? 'Empty List' : `Total drinks: ${weddingDrinks.length}`}</h3>
             {
                 weddingDrinks.map((drink) => (
                     <List>

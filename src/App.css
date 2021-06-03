@@ -14,12 +14,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #a3a3a3;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +35,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h2, h3 {
+  font-variant: small-caps;
+  color: #535353;
 }
