@@ -20,6 +20,10 @@ export const DrinksProvider = ({children}) => {
             setEvent([...event, drink]);
         }
     }
+
+    const removeFromEvent = (event, drink) => {
+        event.filter((e) => e !== drink);
+    }
     
     return (
         <DrinkContext.Provider
@@ -32,7 +36,8 @@ export const DrinksProvider = ({children}) => {
                 confraternizationDrinks, 
                 setConfraternizationDrinks,
                 getListDrinks,
-                addDrinkOnEvent
+                addDrinkOnEvent,
+                removeFromEvent
             }}
         >
             {children}
