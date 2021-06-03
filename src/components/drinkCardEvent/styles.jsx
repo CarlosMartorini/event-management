@@ -5,6 +5,7 @@ export const List = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    color: #535353;
 `;
 
 export const Card = styled.div`
@@ -14,6 +15,7 @@ export const Card = styled.div`
     width: 50rem;
     height: 11rem;
     margin: 2rem 10rem;
+    border-bottom: 2px solid #535353;
     
     img {
         width: 3rem;
