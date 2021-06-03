@@ -9,7 +9,7 @@ const Confraternization = () => {
     return (
         <>
         <h2>Confraternization Drinks List</h2>
-        <h3>{confraternizationDrinks.length === 0 ? 'Empty List' : `Total drinks:${confraternizationDrinks.length}`}</h3>
+        <h3>{confraternizationDrinks.length === 0 ? 'Empty List' : `Total drinks: ${confraternizationDrinks.length}`}</h3>
         {
             confraternizationDrinks.map((drink) => (
                 <List>

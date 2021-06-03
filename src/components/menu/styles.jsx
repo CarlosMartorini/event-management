@@ -7,11 +7,13 @@ export const Link = styled.button`
     padding: 0.5rem 2rem;
     margin: 0 0.3rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     font-variant: small-caps;
+    transition: 0.4s;
 
     :hover {
         background-color: #ffffff;
         color: #0000ff;
+        border-radius: 1rem;
     }
 `;
