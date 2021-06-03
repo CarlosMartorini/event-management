@@ -1,5 +1,6 @@
+import { useEffect } from 'react';
 import { useDrinks } from '../../providers/drinks';
-import { Container, List, ImgContainer, InfoContainer } from './styles';
+import { Container, List, ImgContainer, InfoContainer, Button } from './styles';
 
 const DrinksList = () => {
     const { 
@@ -14,9 +15,12 @@ const DrinksList = () => {
         addDrinkOnEvent
     } = useDrinks();
 
+    useEffect(() => {
+        getListDrinks()
+    })
+
     return (
         <>
-            <button onClick={getListDrinks}>Show List</button>
             <List>
                 {
                     drinks.map((drink) => (
@@ -25,19 +29,21 @@ const DrinksList = () => {
                                 <img src={drink.image_url} alt={drink.name}/>
                             </ImgContainer>
                             <InfoContainer>
-                                <span key={drink.id}>{drink.name}</span>
-                                <span>{drink.volume.value}{drink.volume.unit}</span>
+                                <p key={drink.id}>{drink.name}</p>
+                                <p>Since {drink.first_brewed.substring(3)}</p>
+                                <p>{drink.tagline}</p>
+                                <p>{drink.volume.value}{drink.volume.unit.substring(0, 1)}</p>
                                 <label>Add Drink On Event</label>
                                 <div>
-                                    <button 
+                                    <Button 
                                         onClick={() => addDrinkOnEvent(weddingDrinks, setWeddingDrinks, drink)}
-                                    >Wedding</button>
-                                    <button
+                                    >Wedding</Button>
+                                    <Button
                                         onClick={() => addDrinkOnEvent(graduationDrinks, setGraduationDrinks, drink)}
-                                    >Graduation</button>
-                                    <button
+                                    >Graduation</Button>
+                                    <Button
                                         onClick={() => addDrinkOnEvent(confraternizationDrinks, setConfraternizationDrinks, drink)}
-                                    >Confraternization</button>
+                                    >Confraternization</Button>
                                 </div>
                             </InfoContainer>
                         </Container>
