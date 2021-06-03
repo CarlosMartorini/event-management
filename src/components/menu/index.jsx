@@ -1,0 +1,22 @@
+import { useHistory } from "react-router-dom";
+import { Link } from './styles';
+
+const Menu = () => {
+
+    const history = useHistory();
+
+    const handleClick = (path) => {
+        history.push(path);
+    }
+
+    return (
+        <>
+            <Link onClick={() => handleClick('/')}>Home</Link>
+            <Link onClick={() => handleClick('/wedding')}>Wedding</Link>
+            <Link onClick={() => handleClick('/graduation')}>Graduation</Link>
+            <Link onClick={() => handleClick('/confraternization')}>Confraternization</Link>
+        </>
+    )
+}
+
+export default Menu;
