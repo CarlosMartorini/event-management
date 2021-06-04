@@ -16,13 +16,14 @@ export const DrinksProvider = ({children}) => {
     }
 
     const addDrinkOnEvent = (event, setEvent, drink) => {
-        if (event.includes(drink) === false) {
-            setEvent([...event, drink]);
+        if (event.some( e => e.id === drink.id) === false ) {
+            setEvent([...event, drink])
         }
     }
 
-    const removeFromEvent = (event, drink) => {
-        event.filter((e) => e !== drink);
+    const removeFromEvent = (event, setEvent, drinkId) => {
+        const newList = event.filter((e) => e.id !== drinkId);
+        setEvent(newList);
     }
     
     return (
