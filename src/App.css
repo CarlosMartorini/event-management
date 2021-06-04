@@ -42,3 +42,10 @@ h2, h3 {
   font-variant: small-caps;
   color: #535353;
 }
+
+@media (max-width: 380px) {
+  .App-header {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

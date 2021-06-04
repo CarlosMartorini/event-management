@@ -15,6 +15,7 @@ const DrinksList = () => {
         addDrinkOnEvent
     } = useDrinks();
 
+
     useEffect(() => {
         getListDrinks()
     })
