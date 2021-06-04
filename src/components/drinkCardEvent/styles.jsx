@@ -22,6 +22,11 @@ export const Card = styled.div`
         width: 3rem;
         height: 10rem;
         margin-right: 3rem;
+
+        @media (max-width: 600px) {
+            margin: 0;
+        }
+
     }
 
     span {
@@ -29,7 +34,19 @@ export const Card = styled.div`
         font-size: 1.2rem;
         font-variant: small-caps;
         max-width: 30rem;
+        
+        @media (max-width: 600px) {
+            font-size: 0.7rem;
+        }
+
     }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        border: none;
+        margin: 4rem;
+    }
+
 `;
 
 export const Button = styled.button`
@@ -47,5 +64,15 @@ export const Button = styled.button`
         padding: 1rem 1.5rem;
         margin: 0.5rem;
         box-shadow: 2px 2px 5px #4646467d;
+
+        @media (max-width: 600px) {
+            padding: 0.2rem;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+        padding: 0.1rem;
+        font-size: 0.8rem;
     }
 `;
