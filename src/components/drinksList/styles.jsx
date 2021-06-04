@@ -42,7 +42,7 @@ export const List = styled.div`
 `;
 
 export const Button = styled.button`
-    padding: 0.3rem 0.7rem;
+    padding: 0.6rem 0.8rem;
     margin: 0.5rem;
     border: none;
     border-radius: 0.5rem;

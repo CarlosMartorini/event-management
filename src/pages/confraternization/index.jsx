@@ -1,5 +1,5 @@
 import { useDrinks } from '../../providers/drinks';
-import { Card, List } from '../../components/drinkCardEvent/styles';
+import { Card, List, Button } from '../../components/drinkCardEvent/styles';
 
 const Confraternization = () => {
 
@@ -17,7 +17,7 @@ const Confraternization = () => {
                         <span key={drink.id}>{drink.name}</span>
                         <span>IBU {drink.ibu}</span>
                         <span>Match: {drink.food_pairing.toString()}</span>
-                        <button onClick={() => removeFromEvent(confraternizationDrinks, setConfraternizationDrinks, drink.id)}>Remove</button>
+                        <Button onClick={() => removeFromEvent(confraternizationDrinks, setConfraternizationDrinks, drink.id)}>Remove</Button>
                     </Card>
             ))
         }
