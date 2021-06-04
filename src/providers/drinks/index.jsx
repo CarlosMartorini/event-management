@@ -17,7 +17,7 @@ export const DrinksProvider = ({children}) => {
 
     const addDrinkOnEvent = (event, setEvent, drink) => {
         if (event.some( e => e.id === drink.id) === false ) {
-            setEvent([...event, drink])
+            setEvent([...event, drink]);
         }
     }
 

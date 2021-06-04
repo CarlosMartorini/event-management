@@ -17,6 +17,19 @@ export const Link = styled.button`
         border-radius: 1rem;
         box-shadow: 2px 2px 5px #4646467d;
     }
+
+    @media (max-width: 1043px) {
+        padding: 0.2rem;
+        margin: 0.1rem;
+    }
+
+    @media (max-width: 650px) {
+        font-size: 0.5rem;
+    }
+
+    @media (max-width: 380px) {
+        width: 5rem;
+    }
 `;
 
 export const Title = styled.h1`
@@ -27,4 +40,13 @@ export const Title = styled.h1`
     font-size: 3rem;
     text-shadow: 1px 1px 5px #ffffffca;
     font-variant: small-caps;
+
+    @media (max-width: 1043px) {
+        width: 60vw;
+        font-size: 2rem;
+    }
+
+    @media (max-width: 650px) {
+        font-size: 1.5rem;
+    }
 `;
