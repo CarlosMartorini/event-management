@@ -13,9 +13,9 @@ export const Card = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 80rem;
+    width: 80vw;
     height: 11rem;
-    margin: 2rem 10rem;
+    margin: 2rem;
     border-bottom: 2px solid #535353;
     
     img {

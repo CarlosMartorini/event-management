@@ -18,22 +18,22 @@ const DrinksList = () => {
     useEffect(() => {
         getListDrinks()
     })
-
+    
     return (
         <>
             <List>
                 {
                     drinks.map((drink) => (
-                        <Container>
+                        <Container key={drink.id}>
                             <ImgContainer>
                                 <img src={drink.image_url} alt={drink.name}/>
                             </ImgContainer>
                             <InfoContainer>
-                                <p key={drink.id}>{drink.name}</p>
+                                <p>{drink.name}</p>
                                 <p>Since {drink.first_brewed.substring(3)}</p>
                                 <p>{drink.tagline}</p>
                                 <p>{drink.volume.value}{drink.volume.unit.substring(0, 1)}</p>
-                                <label>Add Drink On Event</label>
+                                <label style={{marginTop:'2rem'}}>Add Drink On Event</label>
                                 <div>
                                     <Button 
                                         onClick={() => addDrinkOnEvent(weddingDrinks, setWeddingDrinks, drink)}
